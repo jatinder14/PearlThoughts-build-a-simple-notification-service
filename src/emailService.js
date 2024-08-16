@@ -1,18 +1,18 @@
 const nodemailer = require('nodemailer');
 
 const primaryTransporter = nodemailer.createTransport({
-    service: process.env.service || 'gmail',
+    service: process.env.SERVICE || 'gmail',
     auth: {
-        user:  process.env.from || 'jatinder1901243@gmail.com',
-        pass:  process.env.pass || 'ybri zyhh dfne grhd'
+        user:  process.env.EMAIL_USER || 'jatinder1901243@gmail.com',
+        pass:  process.env.EMAIL_PASS || 'ybri zyhh dfne grhd'
     }
 });
 
 const backupTransporter = nodemailer.createTransport({
-    service: process.env.backupservice || 'yahoo',
+    service: process.env.BACKUPSERVICE || 'yahoo',
     auth: {
-        user:  process.env.from || 'jatinder1901243@yahoo.com',
-        pass:  process.env.pass || 'ybri zyhh dfne grhd'
+        user:  process.env.BACKUP_EMAIL_USER || 'jatinder1901243@yahoo.com',
+        pass:  process.env.BACKUP_EMAIL_PASS || 'ybri zyhh dfne grhd'
     }
 });
 
