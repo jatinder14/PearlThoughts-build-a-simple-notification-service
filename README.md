@@ -20,3 +20,17 @@ This is a simple notification service built with Node.js and Express.js. The ser
    ```bash
    git clone https://github.com/yourusername/notification-service.git
    cd notification-service
+   
+2. Copy the .env.example file to .env:
+   ```bash
+   cp env.example .env
+   Open the .env file and replace the placeholders with your actual email credentials.
+
+3. Install dependencies
+   ```bash
+   npm i
+
+4. Run the app
+   ```bash
+   npm run start
+
